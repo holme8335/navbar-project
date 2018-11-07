@@ -20,7 +20,8 @@
 @import
 	"base/colors",
 	"base/fonts",
-	"base/breakpoints";         // break points for responsive web design //
+	"base/breakpoints",
+	"base/image";         // break points for responsive web design //
 
 /**
 * The abstracts folder gathers all Sass tools and helpers used across the project.
@@ -38,5 +39,7 @@
 @import
 	"layout/zone",
 	"layout/area",
-	"layout/common";            // layout common classes for area and zone //
+	"layout/common",
+	"layout/forms",
+	"layout/header";            // layout common classes for area and zone //
 

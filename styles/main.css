@@ -1,0 +1,564 @@
+/**
+* Description: This is the Clariti main styling file
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* Rules : one @import per folder.
+* a linebreak after @import.
+* each file on its own line.
+* a new line after the last import from a folder.
+* file extensions and leading underscores omitted.
+*/
+/**
+* The base folder holds what we might call the boilerplate code for the project.
+*/
+/**
+* Description: Color palette for entire application.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* No other color should be declared anywhere in the application.
+*/
+/**
+* Description: Color palette for entire application.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* This is the im Font styling file
+* font-family
+* font-size
+* font-weight
+*/
+/*Google Fonts imported from googleapi. */
+@import url("https://fonts.googleapis.com/css?family=Asap|Open+Sans|Raleway|Roboto:300,400,500");
+/* base value for the application (1rem = 16px). */
+/* line height for the application. */
+/**
+* Description: This is the Clariti main styling file 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.cat-img {
+  height: 25px;
+  width: 25px;
+  background: url("https://staging4.clariti.app/wp-content/uploads/2018/09/github.png");
+  background-size: 25px 25px;
+}
+
+.arrow-img {
+  -webkit-transition: .6s;
+  transition: .6s;
+  height: 10px;
+  width: 10px;
+  background-image: url("https://staging4.clariti.app/wp-content/uploads/2017/09/android-arrow-back-white-up.png");
+  background-size: 10px 10px;
+}
+
+.big-arrow-img {
+  -webkit-transition: .6s;
+  transition: .6s;
+  height: 20px;
+  width: 20px;
+  background-image: url("https://staging4.clariti.app/wp-content/uploads/2017/09/android-arrow-back-white-up.png");
+  background-size: 20px 20px;
+}
+
+/**
+* The abstracts folder gathers all Sass tools and helpers used across the project.
+* It should not output a single line of CSS when compiled on its own. 
+*/
+/**
+* Description: This file holds the scss variables. 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* base value for item list area. (16px)
+*/
+/**
+* base width for item list area. (16 * 25 = 400px)
+*/
+/**
+* line height for item list area. (16 * 1.1225 = 18px)
+*/
+/**
+* base value for item list area. (16px)
+*/
+/**
+* base width for item list area. (16 * 16 = 256px)
+*/
+/**
+* Description: This file holds the scss functions.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* function to return color value based up on input arguments from a map.
+* input: $scheme - scheme type should be mentioned ex: primary, secondary etc.
+* input: $tone  - tone type should be mentioned ex: base, light, dark etc.
+*/
+/**
+* function to return font family based up on input arguments from a map.
+* input: $fontname - fontname should be mentioned ex: opensans, roboto etc.
+*/
+/**
+* function to return font size based up on input arguments from a map.
+* input: $fontscheme - fontscheme should be mentioned ex: xsmall, small etc.
+*/
+/**
+* function to return font weight based up on input arguments from a map.
+* input: $fontweight - fontweight should be mentioned ex: bold, bolder etc.
+*/
+/**
+* function to return lighten color using lighten percentage.
+* input: $base - primary color ex: base.
+* input: $percentage - percentage of lightness.
+*/
+/**
+* function to return darken color using darken percentage.
+* input: $base - primary color ex: base.
+* input: $percentage - percentage of darkness.
+*/
+/**
+* Description: This file holds the scss placeholders.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+*/
+/**
+* The layout folder contains everything that
+* takes part in laying out the application.
+*/
+/**
+* Description: This is the Clariti main styling file 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* Description: This is the Clariti areas layout file 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/**
+* Description: This is the Clariti main styling file 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+/*
+Description: Style class to:
+   - remove default margin and padding values
+   - height and width are set to 100%
+   - position, background color and font are mentioned for whole application.
+*/
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif !important;
+  background-color: white !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+/*
+Description: Style class to:
+    - align child items in row direction.
+*/
+.im-global-rowFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+/*
+Description: Style class to:
+    - align child items in column direction.
+*/
+.im-global-columnFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+/*
+Description: Style class to:
+    - occupies the remaining space in the container.
+*/
+.im-global-flexgrow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/*
+Description: Style class to:
+    - height and width is set to parents full width and height.
+*/
+.im-global-dockFull {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+Description: Style class to:
+    - turns off the display of an element.
+*/
+.im-global-displayNone {
+  display: none;
+}
+
+/*
+Description: Style class to:
+    - if the text exceeds the container width, show ellipsis.
+*/
+.im-g-ellipsisCls {
+  text-overflow: ellipsis;
+  /* to add ellipsis if the text exceeds the lenght of the container */
+  white-space: nowrap;
+  /* Text will never wrap to the next line */
+  overflow: hidden;
+  /* when content overflows an element's box, the overflow is clipped, and the rest of the content will be invisible */
+}
+
+/********* Common Classes ***********/
+body {
+  font: Raleway;
+}
+
+.over-menu-div {
+  width: 353px;
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.container-div {
+  font: 12px Raleway;
+  display: table;
+  vertical-align: middle;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-color: #2b3c4c;
+  width: 100%;
+  min-height: 20px;
+  max-height: 80px;
+  color: #cad1d7;
+  border: 1px solid #556573;
+}
+
+.container-div:hover {
+  -webkit-transition: .1s;
+  transition: .1s;
+  background-color: #dedede;
+  color: #fff;
+}
+
+.icon-div {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 1.5%;
+  margin-left: 2%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.txt-div {
+  vertical-align: center;
+  padding-top: .5%;
+  display: inline-block;
+  min-height: 15px;
+  max-height: 30px;
+}
+
+.js-rotated-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.js-rotated-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.js-rotated-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.right {
+  margin-top: 2.5%;
+  margin-right: 6%;
+  float: right;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.input-div {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.5%;
+}
+
+.sub-menu {
+  padding-left: 10%;
+}
+
+.txt-input-style {
+  background-color: #2b3c4c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/********* First Panel Classes ***********/
+.email-status {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  text-align: left;
+}
+
+.active-email:after {
+  content: "Active";
+  color: #36dc86;
+}
+
+.public-email:after {
+  content: "Public";
+  color: #36dc86;
+}
+
+.container-div:hover .rotated-180 {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.container-div:hover .active-email:after {
+  content: "Inactive";
+  color: red;
+}
+
+.container-div:hover .public-email:after {
+  content: "Not Public";
+  color: red;
+}
+
+/********* Second Panel ***********/
+.sync-txt:after {
+  content: "This Git Cat is currently synched";
+}
+
+.out-sync-txt:after {
+  content: "This Git Cat is not synched";
+}
+
+/********* Third Panel ***********/
+.form-div {
+  padding-right: .1%;
+}
+
+.form-div:hover {
+  background-color: #2b3c4c;
+}
+
+.input-txt {
+  width: 100%;
+  text-align: center;
+  height: 35%;
+}
+
+/********* Fourth Panel ***********/
+.hov-display {
+  display: none;
+}
+
+.container-div:hover .hov-display {
+  display: block;
+}
+
+/********* Fifth Panel ***********/
+.form-div {
+  font: 12px Raleway;
+  width: 100%;
+}
+
+.email-form {
+  display: inline-block;
+  width: 90%;
+}
+
+.form-padding {
+  text-align: center;
+  padding: 3%;
+}
+
+.input-name {
+  display: inline-block;
+  width: 25%;
+}
+
+.form-hov:hover {
+  background-color: #2b3c4c;
+}
+
+.form-bttn {
+  border-radius: 5px;
+}
+
+.form-field {
+  width: 60%;
+  vertical-align: bottom;
+}
+/********* Header Classes ***********/
+.header-div {
+  background-color: #2b3c4c;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  vertical-align: baseline;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.header-item-span {
+  vertical-align: middle;
+  padding-left: 15px;
+  padding-bottom: .2%;
+  margin-right: 1%;
+}
+
+.menu-div {
+  position: absolute;
+  z-index: 1;
+}
+
+.header-menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.header-menu-item:hover .header-item-span {
+  border-bottom: 1.5px solid #30b4f4;
+  cursor: pointer;
+}
+
+.profile-div {
+  font: 21px/1.1 Raleway;
+  line-height: 27.5px;
+  width: 250px;
+  text-align: center;
+  margin-top: 9px;
+  display: inline-block;
+}
+
+.profile-menu-div {
+  margin-left: 7.5%;
+  margin-top: 1%;
+  width: 283px;
+  text-align: left;
+}
+
+.profile-txt-div {
+  padding: 2%;
+  padding-left: 3%;
+}
+
+.header-item-div {
+  font: 12px Raleway;
+  display: inline;
+}
+
+.header-arrow-space {
+  margin: .1%;
+}
+
+.img-offset {
+  margin-left: 15%;
+}
+
+.email-menu-div {
+  left: 0%;
+  margin-top: 2%;
+}
+
+.email-div {
+  width: 350px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.profile-form {
+  width: 100%;
+  float: left;
+}
+/*# sourceMappingURL=main.css.map */
