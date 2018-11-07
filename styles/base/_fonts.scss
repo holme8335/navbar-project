@@ -1,0 +1,52 @@
+/**
+* Description: Color palette for entire application.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/**
+* This is the im Font styling file
+* font-family
+* font-size
+* font-weight
+*/
+
+/*Google Fonts imported from googleapi. */
+@import 
+    url('https://fonts.googleapis.com/css?family=Asap|Open+Sans|Raleway|Roboto:300,400,500');
+
+$im-font-family : (                                      /* map to hold font families. */
+    'opensans'      :		OpenSans,
+    'asap'          :		ASAP,
+    'raleway'       :		Raleway,
+    'roboto'        :		Roboto,
+    'segoeui'       :		SegoeUI,                    // Microsoft font
+    'monospace'     :	    monospace                   // Microsoft font
+);
+
+$im-base-value      :       1rem;                       /* base value for the application (1rem = 16px). */
+$im-line-height     :       $im-base-value * 1.5;       /* line height for the application. */
+
+$im-font-size : (                                       /* map to hold font-sizes.(8,9,10,12,13,16,18,20,24px) */
+    'xsmall'        :       $im-base-value * 0.5,
+    'smallest'      :       $im-base-value * 0.5625,
+    'smaller'       :       $im-base-value * 0.625,
+    'small'         :       $im-base-value * 0.75,
+    'medium'        :       $im-base-value * 0.825,
+    'normal'        :       $im-base-value,
+    'large'         :       $im-base-value * 1.125,
+    'xlarge'        :       $im-base-value * 1.25,
+    'xxlarge'       :       $im-base-value * 1.5
+);
+
+$im-font-weight : (                                     /* map to hold font weights. */
+    'lightest'      :       100,
+    'lighter'       :       200,
+    'light'         :       300,
+    'regular'       :       400,
+    'bold'          :       600,
+    'bolder'        :       800,
+    'boldest'       :       900
+);

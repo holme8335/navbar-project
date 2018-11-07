@@ -1,0 +1,225 @@
+/**
+* Description: This file is used to apply style to an invite new users by email id.
+* Author: KPN
+* Revision History:
+* 19-Oct-2018 KPN Created
+* 01-Nov-2018 KPN Modified
+* Copyright 2018 CCE Technologies Inc
+*/
+@import '../../base/fonts',
+        '../../base/colors';
+@import
+        '../../abstracts/_functions',
+        '../../abstracts/placeholders',
+        '../../abstracts/variables';
+
+:host{
+  width: $im-pa-iv-base-width;
+  height: 434px; /*Temporary*/
+}
+*{
+  position: relative;
+}
+%font12asap_color333_letterspacing1px{
+  font-family: 'Asap', sans-serif;                          /* Specifies the font for an element */
+  letter-spacing: 1px;                                      /* Make increases or decreases the space between characters in a text */
+  font-size:12px;                                           /* Set the size of a font */
+  color: #333;                                            /* Set the color of the text */
+}
+/*
+  Description: This class consist of styles for invite new users by email section
+*/
+.im-pa-iv-emailinvite-container{
+  @extend %font14_Colorblack_letterspacing1px;
+  background: setColor(accent,ultralight);
+  padding: $im-pa-iv-base-value / 1.6;
+}
+/*
+  Description: This class consist of styles for heading('Invite new users by email')
+*/
+.im-pa-iv-emailinvite-heading{
+  font-weight: setFontWeight(boldest);
+  text-align: center;                                       /* Make the text-align to center */
+  font-family: setFontFamily(asap);                         /* Specifies the font for an element */
+}
+/*
+  Description: This class consist of styles for guide lines
+*/
+.im-pa-iv-emailinvite-infoAboutEmailText p{
+  text-align: justify;                                      /* Stretches the lines so that each line has equal width*/
+  margin:10px 10px 0 10px;                                  /* Set the margins for an element*/
+  @extend %font14_Colorblack_letterspacing1px;              /* Make increases or decreases the space between characters in a text */
+  font-family: Raleway;                                     /* Specifies the font for an element */
+}
+/*
+  Description: This class consist of styles for email box parent div
+*/
+.im-pa-iv-emailinvite-emailIdBox {
+  border-bottom: 1px solid setColor(accent,light);                       /* Set border-bottom to #8dd5fa for an element */
+  height: 20px;                                             /* Set the height of an element */
+  width: calc(100% - 20px);                                 /* Sets the width of an element*/
+  margin:14px 10px 20px;                                    /* Set the margin of an element */
+}
+/*
+  Description: This class consist of styles for email box
+*/
+.im-pa-iv-emailinvite-emailIdBox>input[type="email" i]{
+  background-color: transparent;                            /* Make the background color should be transparent */
+  border:none;                                              /* Set no border for an element*/
+  width: 100%;                                             /* Sets the width of an element*/
+  padding: 4px 6px;                                         /* Make space around an element's content, inside of any defined borders */
+  @extend %font12asap_color333_letterspacing1px;                            /* Specifies the font for an element */
+  box-sizing: border-box;                                   /* Allows us to include the padding and border in an element's total width and height*/
+}
+/*
+  Description: This class consist of styles for disabling email textbox
+*/
+.im-pa-iv-emailinvite-emailIdBox input[type="email" i]:disabled{
+  cursor: not-allowed;                                      /* Make the cursor indicates that the requested action will not be executed */
+  background: transparent;                                  /* Make the background should be transparent */
+}
+/*
+  Description: This class consist of styles for placeholder in email textbox in google chrome
+*/
+.im-pa-iv-emailinvite-emailIdBox input[type="email" i]::-webkit-input-placeholder{
+  @extend %font12asap_color333_letterspacing1px;
+}
+/*
+  Description: This class consist of styles for placeholder in email textbox in mozilla
+*/
+.im-pa-iv-emailinvite-emailIdBox input[type="email" i]::-moz-placeholder{
+  @extend %font12asap_color333_letterspacing1px;
+}
+/*
+  Description: This class consist of styles for placeholder in email textbox in IE
+*/
+.im-pa-iv-emailinvite-emailIdBox input[type="email" i]::-ms-input-placeholder{
+  @extend %font12asap_color333_letterspacing1px;
+}
+/*
+  Description: This class consist of styles for focusing the email textbox
+*/
+.im-pa-iv-emailinvite-emailIdBox input[type="email" i]:focus{
+  color:#373636;                                          /* Set the color of the text */
+  border: 0;                                                /* Set no border for an element*/
+  box-shadow: none;                                         /* Remove box-shadow for the class */
+  outline: none;                                            /* Make no outline */
+}
+/*
+  Description: This class consist of styles for invite and clear button style
+*/
+.im-pa-iv-emailinvite-invitationbutton{
+  border-radius: 3px;                                       /* Set the radius of the element's corners */
+  padding: 5px;                                   /* Make space around an element's content, inside of any defined borders */
+  font-size: 12px;                                          /* Set the size of a font */
+  font-weight: 700;                                         /* Make the text thin to thick characters */
+  background-color: setColor(accent);                              /* Set the background color of an element */
+  color:setColor(foreground,ultralight);                                            /* Set the color of the text */
+  border: 1px solid setColor(accent)!important;                    /* Set the border of an element */
+  text-shadow: none;                                        /* Remove text-shadow of an element */
+  text-transform: uppercase;                                /* Make the transforms all characters to uppercase */
+  cursor: pointer;                                          /* Set the cursor is a pointer and indicates a link */
+}
+/*
+  Description:This class consist of styles for invite and clear button style hover behaviour
+*/
+.im-pa-iv-emailinvite-invitationbutton:hover{
+  background-color: setColor(foreground,ultralight);                                 /* Set the background color of an element */
+  color: setColor(accent);                                         /* Set the color of the text */
+  border: 1px solid setColor(accent)!important;                    /* Set the border of an element */
+}
+/*
+  Description:This class consist of styles for invite and clear button style focus behaviour
+*/
+.im-pa-iv-emailinvite-invitationbutton:focus{
+  outline: none;                                            /* Make no outline */
+}
+/*
+  Description: This class consist of styles which is used to center the invite and clear button
+*/
+.im-pa-iv-emailinvite-buttonGroup{
+  text-align: center;                                       /* Make the text-align to center */
+}
+/*
+  Description: This class consist of styles for positioning the loader, tick-mark and alert images
+*/
+.im-pa-iv-emailinvite-userAlertImages{
+  position: absolute;                                       /* Set position to absolute with respect of an element*/
+  top: auto;                                                /* Set top of an element */
+  bottom: 0;                                                /* Set bottom of an element */
+  right: 13px;                                              /* Set right of an element */
+}
+/*
+  Description: This class consist of styles for loader image
+*/
+.im-pa-iv-emailinvite-inprogress{
+  background-color: transparent;                            /* Make the background color should be transparent */
+  margin: 0 0 0px 5px;                                      /* Set the left margin of an element */
+  display: flex;                                            /* Set the flexible length on flexible items */
+  border-radius: 5px;                                       /* Set the radius of the element's corners */
+  float: right;                                             /* Make the element floats the right of its container*/
+  position: relative;                                       /* Set position to relative with respect of an element*/
+  top: -4px;                                                /* Set top of an element */
+}
+/*
+  Description: This class consist of styles for error messages
+*/
+.im-pa-iv-emailinvite-validationMsg{
+  clear:both;                                               /* No floating elements allowed on either the left or the right side  */
+  color:#e7585c;                                          /* Set the color of the text */
+  font-size: 10px;                                          /* Set the size of a font */
+  padding-left: 10px;                                       /* Set the left padding (space) of an element */
+  height:14px;                                              /* Set the height of an element */
+  margin: -12px 0 13px;                                     /* Set the margin of an element */
+}
+/*
+  Description: This class consist of styles for the border when invite is send successfully
+*/
+.im-pa-iv-emailinvite-successBorderColor{
+  border-bottom:1px solid #0ca953;                        /* Set border-bottom to #8dd5fa for an element */
+}
+/*
+  Description: This class consist of styles for the border when the entered email id is invalid
+*/
+.im-pa-iv-emailinvite-errorBorderColor{
+  border-bottom: 1px solid #e7585c;                       /* Set border-bottom to #8dd5fa for an element */
+}
+/*
+  Description: This class consist of styles for email invite success message
+*/
+.im-pa-iv-emailinvite-successStatusText {
+  color: #0ca953;                                         /* Set the color of the text */
+  font-size: 12px;                                          /* Set the size of a font */
+  line-height: 17px;                                        /* Set the height of a line */
+  padding-left: 7px;                                        /* Set the left padding (space) of an element */
+  float: left;                                              /* Set the element floats to the left of its container*/
+  width: 100%;                                              /* Set the width of an element*/
+}
+/*
+  Description: This class consist of styles for clear button
+*/
+.im-pa-iv-emailinvite-clearbutton{
+  margin-top: 20px;                                         /*Set the top margin of an element */
+}
+/*
+  Description: This class consist of styles for hidding textboxes
+*/
+.im-pa-iv-emailinvite-textboxHidden {
+  display: none !important;                                 /* Hide an element */
+}
+/*
+  Description: This class consist of styles for invitation success image gets displayed when invite is sent successfully
+*/
+.im-pa-iv-emailinvite-success-icon ::ng-deep svg {
+  width: 20px;                                              /* Set the width of an element*/
+  height: 20px;                                             /* Set the height of an element */
+  fill: setColor(success,dark);                             /* Set the svg color*/
+}
+/*
+  Description:  This class consist of styles for warning image
+*/
+.im-pa-iv-emailinvite-alert-icon ::ng-deep svg{
+  cursor: pointer;                                          /* Set cursor to pointer for the class */
+  width: 20px;                                              /* Sets the width of an element*/
+  height: 20px;                                             /* Set the height of an element */
+}

@@ -1,0 +1,19 @@
+/**
+* Description: This file holds the scss placeholders.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/**
+*/
+%fontSetting14px{
+    line-height: $im-base-value * 1.125;     /* Sets 18px height of the element  */
+    font-size: setFontSize(medium);          /* Sets 14px font-size of the element  */
+}
+%font14_Colorblack_letterspacing1px{
+    @extend %fontSetting14px;
+    color: setColor(foreground,darker);             /* Sets black color of text in the element  */
+    letter-spacing: $im-base-value / 16;            /* Defines an extra space between characters */
+}

@@ -1,0 +1,44 @@
+/**
+* Description: This file deals with the style which are common in nameplate
+* Author: UBS
+* Revision History:
+* 23-Oct-2018 UBS Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/*dropdown menu element styling*/
+.im-np-dropdownMenuItemCls{
+    display: flex;                     /*sets display as flex*/
+    flex-direction: row-reverse;       /*flex direction as row reverse*/
+    justify-content: flex-end;         /*justifies content to flex end*/
+    height: 27px;                      /*sets height*/
+    padding-top: 3px !important;       /*sets padding*/
+    cursor: pointer;                   /*sets cursor as pointer*/
+    color: #cad1d7;                  /*color of text*/
+
+    /*should be removed when parent class gets added*/
+    box-sizing: border-box;
+}
+
+/*dropdown menu element styling */
+.im-np-dropdownMenuItemCls:hover {
+    background-color: #8092a0;         /*sets bg color on hover*/
+    color: #FFF;                       /*sets color on hover*/                  
+}
+  
+/*sepator for dropdown elements*/
+.im-np-dropdownMenuItemSeparator{
+    border-bottom: 1px solid #959fa7;  /*border bottom*/
+}
+
+/*About icon properties*/
+.im-np-svgIconCls{
+    stroke: #64B9BC;                   /*stroke color*/
+    fill: #64B9BC;                     /*fill color*/
+}
+  
+/*About icon properties*/
+.im-np-dropdownMenuItemCls:hover .im-np-svgIconCls{
+    stroke: #fff;                     /*stroke color*/
+    fill: #fff;                       /*fill color*/
+}

@@ -1,0 +1,86 @@
+/**
+* Description: This is the Clariti main styling file 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/*
+Description: Style class to:
+   - remove default margin and padding values
+   - height and width are set to 100%
+   - position, background color and font are mentioned for whole application.
+*/
+html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    position:absolute;
+    font-family: 'Open Sans', sans-serif !important;
+    background-color:  white!important;
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+/*
+Description: Style class to:
+    - align child items in row direction.
+*/
+.im-global-rowFlexContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/*
+Description: Style class to:
+    - align child items in column direction.
+*/
+.im-global-columnFlexContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/*
+Description: Style class to:
+    - occupies the remaining space in the container.
+*/
+.im-global-flexgrow{
+    flex-grow: 1;
+}
+
+/*
+Description: Style class to:
+    - height and width is set to parents full width and height.
+*/
+.im-global-dockFull{
+    width:100%;
+    height: 100%;
+}
+
+/*
+Description: Style class to:
+    - turns off the display of an element.
+*/
+.im-global-displayNone{
+    display:none;
+}
+/*
+Description: Style class to:
+    - if the text exceeds the container width, show ellipsis.
+*/
+.im-g-ellipsisCls {
+    text-overflow: ellipsis; /* to add ellipsis if the text exceeds the lenght of the container */
+    white-space: nowrap; /* Text will never wrap to the next line */
+    overflow: hidden; /* when content overflows an element's box, the overflow is clipped, and the rest of the content will be invisible */
+}

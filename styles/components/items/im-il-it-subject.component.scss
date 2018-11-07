@@ -1,0 +1,31 @@
+/**
+* Description: This file holds the styles related to <im-il-it-subject>
+* Author: SRT
+* Revision History:
+* 12-Oct-2018 SRT Created
+* Copyright 2018 CCE Technologies Inc
+*/
+@import '../../base/fonts',
+        '../../base/colors';
+@import
+        '../../abstracts/functions',
+        '../../abstracts/placeholders',
+        '../../abstracts/variables';
+/**
+* Description: Style class to:
+    - subject styling
+*
+*/
+.im-il-it-subjectStyle { 
+  @extend %font14_Colorblack_letterspacing1px;
+}
+
+/**
+* Description: Style class to:
+    - set height and width of <img> element in case of twitter commitem
+*
+*/
+.im-g-ellipsisCls ::ng-deep img.emoji {
+  height: $im-il-area-base-value * 1.25;            /* Sets 20px height of the element  */
+  width: $im-il-area-base-value * 1.25;             /* Sets 20px width of the element  */
+}

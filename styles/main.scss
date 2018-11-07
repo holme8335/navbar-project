@@ -1,0 +1,42 @@
+/**
+* Description: This is the Clariti main styling file
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/**
+* Rules : one @import per folder.
+* a linebreak after @import.
+* each file on its own line.
+* a new line after the last import from a folder.
+* file extensions and leading underscores omitted.
+*/
+
+/**
+* The base folder holds what we might call the boilerplate code for the project.
+*/
+@import
+	"base/colors",
+	"base/fonts",
+	"base/breakpoints";         // break points for responsive web design //
+
+/**
+* The abstracts folder gathers all Sass tools and helpers used across the project.
+* It should not output a single line of CSS when compiled on its own. 
+*/
+@import
+	"abstracts/variables",
+	"abstracts/functions",
+	"abstracts/placeholders";   // scss placeholders for the app //
+
+/**
+* The layout folder contains everything that
+* takes part in laying out the application.
+*/
+@import
+	"layout/zone",
+	"layout/area",
+	"layout/common";            // layout common classes for area and zone //
+

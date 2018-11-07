@@ -1,0 +1,77 @@
+/**
+* Description: This file holds the scss functions.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/**
+* function to return color value based up on input arguments from a map.
+* input: $scheme - scheme type should be mentioned ex: primary, secondary etc.
+* input: $tone  - tone type should be mentioned ex: base, light, dark etc.
+*/
+@function setColor($scheme, $tone: base) {
+	@if ($tone == 'ultralight') {
+		@return lightenColor(map-get($im-colors, $scheme), 40%);
+	} @else if ($tone == 'lightest'){
+		@return lightenColor(map-get($im-colors, $scheme), 30%);
+	}@else if ($tone == 'lighter'){
+		@return lightenColor(map-get($im-colors, $scheme), 20%);
+	}@else if ($tone == 'light'){
+		@return lightenColor(map-get($im-colors, $scheme), 10%);
+	} @else if ($tone == 'ultradark'){
+		@return darkenColor(map-get($im-colors, $scheme), 40%);
+	}@else if ($tone == 'darkest'){
+		@return darkenColor(map-get($im-colors, $scheme), 30%);
+	}@else if ($tone == 'darker'){
+		@return darkenColor(map-get($im-colors, $scheme), 20%);
+	}@else if ($tone == 'dark'){
+		@return darkenColor(map-get($im-colors, $scheme), 10%);
+	}@else if ($tone == 'base'){
+		@return map-get($im-colors, $scheme);
+	}
+	
+}
+
+/**
+* function to return font family based up on input arguments from a map.
+* input: $fontname - fontname should be mentioned ex: opensans, roboto etc.
+*/
+@function setFontFamily($fontname) {
+	@return map-get($im-font-family, $fontname);
+}
+
+/**
+* function to return font size based up on input arguments from a map.
+* input: $fontscheme - fontscheme should be mentioned ex: xsmall, small etc.
+*/
+@function setFontSize($fontscheme) {
+	@return map-get($im-font-size, $fontscheme);
+}
+
+/**
+* function to return font weight based up on input arguments from a map.
+* input: $fontweight - fontweight should be mentioned ex: bold, bolder etc.
+*/
+@function setFontWeight($fontweight) {
+	@return map-get($im-font-weight, $fontweight);
+}
+
+/**
+* function to return lighten color using lighten percentage.
+* input: $base - primary color ex: base.
+* input: $percentage - percentage of lightness.
+*/
+@function lightenColor($base,$percentage){
+	@return lighten($base,$percentage);
+}
+
+/**
+* function to return darken color using darken percentage.
+* input: $base - primary color ex: base.
+* input: $percentage - percentage of darkness.
+*/
+@function darkenColor($base,$percentage){
+	@return darken($base,$percentage);
+}

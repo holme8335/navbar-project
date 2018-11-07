@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/boilerplate-project/sass/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+	
+  </head>
+
+  <body>
+
+    <!-- Header Start -->
+<div>
+    <header>
+      <div id="header-div" class="header-div">
+
+        <div id="header-profile-div" class="header-menu-item profile-div">
+          <span onclick="profileClick()"  class="header-item-span">
+            Andrew Holmes
+            <div id="profile-arrow"class="icon-div arrow-img js-rotated-180 header-arrow-space"></div>
+          </span>
+          <!-- Profile Container Start -->
+
+ <div id="profile-container" class="profile-menu-div menu-div hide">
+
+  <!-- Name Panel -->
+  
+  <div  id="name-div" class="container-div form-hov">
+  
+    <div id="name-form" class="form-div">
+  <div class="profile-txt-div">You can edit your name here</div>
+  <form class="profile-form" action="">
+  
+   <div id="input-div" class="input-div">
+    <div id="cat-icon" class="icon-div cat-img"></div> <input class="form-field txt-input-style" type="text" name="firstname" value="Andrew">
+   </div>
+   <div id="input-div" class="input-div">
+    <input class="form-field txt-input-style img-offset" type="text" name="lastname" value="Holmes">
+    </div>
+  </form>
+  </div>
+ </div>
+ <div id="sync-div" class="container-div">
+  
+  <div id="arrow-icon" class="icon-div arrow-img"></div>
+  <div class="txt-div">Customize Business Card</div>
+  <div class="icon-div right"></div>
+  
+  </div>
+ </div>
+        </div>
+
+        <div id="header-email-div" class="header-menu-item header-item-div">
+            <span class="header-item-span">
+              Email
+              <div id="email-arrow"class="icon-div arrow-img js-rotated-180 header-arrow-space"></div>
+            </span>
+
+            <!-- Email Container Start -->
+
+            <div id="email-container" class="email-menu-div menu-div hide">
+
+              <!-- Email Panel -->
+              
+              <div  id="email-div" class="email-div container-div">
+  
+                    <div id="cat-icon" class="icon-div cat-img"></div>
+                    
+                    <div id="email-status" class="email-status">
+                    
+                      <div id="active-email" class="active-email"></div>
+                      <div id="public-email" class="public-email"></div>
+                      
+                    </div>
+
+                    
+                    <div class="txt-div">Customize Business Card</div>
+                    
+                    <div id="drop-arrow"class="icon-div arrow-img right js-rotated-180"></div>
+                  
+                  </div>
+             </div>
+          </div>
+
+          <div id="header-feeds-div" class="header-menu-item header-item-div">
+            <span class="header-item-span">
+              Feeds
+              <div id="drop-arrow"class="icon-div arrow-img js-rotated-180 header-arrow-space"></div>
+            </span>
+          </div>
+
+          <div id="header-cloud-div" class="header-menu-item header-item-div">
+            <span class="header-item-span">
+              Cloud Storage
+              <div id="drop-arrow"class="icon-div arrow-img js-rotated-180 header-arrow-space"></div>
+            </span>
+          </div>
+        
+      </div>
+    </header>
+  </div>
+
+  <!-- Header End-->
+  
+  <!-- Overall Container Start -->
+
+ <div id="profile-container" class="profile-menu-div over-menu-div">
+
+<!-- Name Panel -->
+
+<div  id="name-div" class="container-div">
+
+  <div id="name-form" class="form-div">
+
+<form class="email-form" action="">
+
+ <div id="input-div" class="input-div">
+  <div id="cat-icon" class="icon-div cat-img"></div> <input class="form-field txt-input-style" type="text" name="firstname" value="Andrew">
+ </div>
+ <div id="input-div" class="input-div">
+  <div id="user-cred" class="input-name"></div> <input class="form-field txt-input-style" type="text" name="lastname" value="Holmes">
+  </div>
+</form>
+</div>
+</div>
+
+<!-- Second Panel -->
+
+<div id="sync-div" class="container-div sub-menu">
+
+<div id="arrow-icon" class="icon-div"></div>
+<div class="txt-div sync-txt"></div>
+<div class="icon-div right"></div>
+
+</div>
+
+<!-- Third Panel -->
+
+<div id="input-container" class="container-div form-div">
+
+<div class="txt-div input-txt">Cat Git is this</div>
+<div class="input-div"><input class="email-input txt-input-style"/></div>
+
+</div>
+
+<!-- Fourth Panel -->
+
+<div id="sub-menu" class="container-div sub-menu">
+
+<div id="sub-menu-item" class="menu-item">
+
+<div id="arrow-icon" class="icon-div cat-img"></div>
+<div class="txt-div">Cat Git is this</div>
+<div id="menu-arrow" class="icon-div arrow-img js-rotated-270 js-rotated-90 right hov-display"></div>
+
+</div>
+
+</div>
+
+<!-- Fifth Panel -->
+
+<div id="cred-form" class="container-div form-padding form-hov">
+
+<div class="form-div">
+
+<form class="email-form" action="">
+
+ <div id="input-div" class="input-div">
+ <div id="user-name" class="input-name">User name:</div> <input class="form-field txt-input-style" type="text" name="username" value="">
+ </div>
+ <div id="input-div" class="input-div">
+  <div id="user-cred" class="input-name">Password:</div> <input class="form-field txt-input-style" type="password" name="password" value="">
+  </div>
+  <input class="form-bttn" type="submit" value="Save"> <input class="form-bttn" type="submit" value="Cancel">
+</form>
+
+<div id="drop-arrow" class="icon-div arrow-img right js-rotated-180"></div>
+
+</div>
+
+</div>
+
+<!-- Overall Container End --> 
+
+</div>
+
+<div id="menu-container" class="over-menu-div">
+
+  <!-- First Panel -->
+  
+  <div  id="cat-first" class="container-div">
+  
+    <div id="cat-icon" class="icon-div cat-img"></div>
+    
+    <div id="email-status" class="email-status">
+    
+      <div id="active-email" class="active-email"></div>
+      <div id="public-email" class="public-email"></div>
+      
+    </div>
+    
+    <div class="txt-div">This is Git Cat</div>
+    
+    <div id="drop-arrow"class="icon-div arrow-img right js-rotated-180"></div>
+  
+  </div>
+  
+  <!-- Second Panel -->
+  
+  <div id="sync-div" class="container-div sub-menu">
+  
+  <div id="arrow-icon" class="icon-div"></div>
+  <div class="txt-div sync-txt"></div>
+  <div class="icon-div right"></div>
+  
+  </div>
+  
+  <!-- Third Panel -->
+  
+  <div id="input-container" class="container-div form-div">
+  
+  <div class="txt-div input-txt">Cat Git is this</div>
+  <div class="input-div"><input class="email-input txt-input-style"/></div>
+  
+  </div>
+  
+  <!-- Fourth Panel -->
+  
+  <div id="sub-menu" class="container-div sub-menu">
+  
+  <div id="sub-menu-item" class="menu-item">
+  
+  <div id="arrow-icon" class="icon-div cat-img"></div>
+  <div class="txt-div">Cat Git is this</div>
+  <div id="menu-arrow" class="icon-div arrow-img js-rotated-270 js-rotated-90 right hov-display"></div>
+  
+  </div>
+  
+  </div>
+  
+  <!-- Fifth Panel -->
+  
+  <div id="cred-form" class="container-div form-padding form-hov">
+  
+  <div class="form-div">
+  
+  <form class="email-form" action="">
+  
+   <div id="input-div" class="input-div">
+   <div id="user-name" class="input-name">User name:</div> <input class="form-field txt-input-style" type="text" name="username" value="">
+   </div>
+   <div id="input-div" class="input-div">
+    <div id="user-cred" class="input-name">Password:</div> <input class="form-field txt-input-style" type="password" name="password" value="">
+    </div>
+    <input class="form-bttn" type="submit" value="Save"> <input class="form-bttn" type="submit" value="Cancel">
+  </form>
+  
+  <div id="drop-arrow" class="icon-div arrow-img right js-rotated-180"></div>
+  
+  </div>
+  
+  </div>
+  
+  <!-- Overall Container End --> 
+  
+  </div>
+
+<script src="/boilerplate-project/js/scripts.js" ></script>
+  
+  </body>
+  
+ </html>
+
+

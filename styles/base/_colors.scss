@@ -1,0 +1,20 @@
+/**
+* Description: Color palette for entire application.
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/**
+* No other color should be declared anywhere in the application.
+*/
+$im-colors: (                                 /* map to hold base color.*/
+  "primary"     : rgb(136,0,255),
+  "accent"      : rgb(0,172,255),
+  "secondary"   : rgb(255,140,0),
+  "foreground"  : rgb(128,128,128),
+  "background"  : rgb(0,255,255),
+  "warning"     : rgb(255,69,0),
+  "success"     : rgb(0,255,0)
+);

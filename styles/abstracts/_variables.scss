@@ -1,0 +1,32 @@
+/**
+* Description: This file holds the scss variables. 
+* Author: PK
+* Revision History:
+* 30-OCT-2018 PK Created
+* Copyright 2018 CCE Technologies Inc
+*/
+
+/**
+* base value for item list area. (16px)
+*/
+$im-il-area-base-value : $im-base-value;
+
+/**
+* base width for item list area. (16 * 25 = 400px)
+*/
+$im-il-area-base-width : $im-il-area-base-value * 25;
+
+/**
+* line height for item list area. (16 * 1.1225 = 18px)
+*/
+$im-il-line-height : $im-il-area-base-value * 1.125;
+
+/**
+* base value for item list area. (16px)
+*/
+$im-pa-iv-base-value : $im-base-value;
+
+/**
+* base width for item list area. (16 * 16 = 256px)
+*/
+$im-pa-iv-base-width : $im-pa-iv-base-value * 16;
