@@ -62,6 +62,7 @@ body {
 }
 
 .container-div {
+  position: relative;
   font: 12px $default-font;
   display: table;
   vertical-align: middle;
@@ -81,7 +82,7 @@ body {
 .icon-div {
   vertical-align: middle;
   display: inline-block;
-  margin-right: 1.5%;
+  margin-right: 2%;
   margin-left: 2%; 
   background-repeat: no-repeat;
   background-position: right top; }
