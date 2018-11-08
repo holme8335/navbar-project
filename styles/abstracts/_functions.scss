@@ -1,8 +1,9 @@
 /**
 * Description: This file holds the scss functions.
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 
@@ -12,26 +13,25 @@
 * input: $tone  - tone type should be mentioned ex: base, light, dark etc.
 */
 @function setColor($scheme, $tone: base) {
-	@if ($tone == 'ultralight') {
+	@if ($tone == "ultralight") {
 		@return lightenColor(map-get($im-colors, $scheme), 40%);
-	} @else if ($tone == 'lightest'){
+	} @else if ($tone == "lightest"){
 		@return lightenColor(map-get($im-colors, $scheme), 30%);
-	}@else if ($tone == 'lighter'){
+	}@else if ($tone == "lighter"){
 		@return lightenColor(map-get($im-colors, $scheme), 20%);
-	}@else if ($tone == 'light'){
+	}@else if ($tone == "light"){
 		@return lightenColor(map-get($im-colors, $scheme), 10%);
-	} @else if ($tone == 'ultradark'){
+	} @else if ($tone == "ultradark"){
 		@return darkenColor(map-get($im-colors, $scheme), 40%);
-	}@else if ($tone == 'darkest'){
+	}@else if ($tone == "darkest"){
 		@return darkenColor(map-get($im-colors, $scheme), 30%);
-	}@else if ($tone == 'darker'){
+	}@else if ($tone == "darker"){
 		@return darkenColor(map-get($im-colors, $scheme), 20%);
-	}@else if ($tone == 'dark'){
+	}@else if ($tone == "dark"){
 		@return darkenColor(map-get($im-colors, $scheme), 10%);
-	}@else if ($tone == 'base'){
+	}@else if ($tone == "base"){
 		@return map-get($im-colors, $scheme);
-	}
-	
+	}	
 }
 
 /**

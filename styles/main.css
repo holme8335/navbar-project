@@ -358,7 +358,7 @@ body {
 }
 
 .sub-menu {
-  padding-left: 10%;
+  padding-left: 12%;
 }
 
 .txt-input-style {
@@ -368,7 +368,7 @@ body {
   border-right: none;
   border-bottom: 1.5px solid #fff;
   color: #fff;
-  width: 90%;
+  width: 95%;
   text-align: center;
 }
 
@@ -431,8 +431,11 @@ input:focus {
 
 .input-txt {
   width: 100%;
-  text-align: center;
+  text-align: left;
   height: 35%;
+  margin-left: 3%;
+  margin-top: 2%;
+  color: #fff;
 }
 
 /********* Fourth Panel ***********/
@@ -560,5 +563,9 @@ input:focus {
 .profile-form {
   width: 100%;
   float: left;
+}
+
+.business-card-space {
+  margin-right: 4%;
 }
 /*# sourceMappingURL=main.css.map */

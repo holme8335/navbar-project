@@ -1,8 +1,9 @@
 /**
-* Description: This file holds the scss variables. 
-* Author: PK
+* Description: This file holds the scss variables.
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 
@@ -25,8 +26,3 @@ $im-il-line-height : $im-il-area-base-value * 1.125;
 * base value for item list area. (16px)
 */
 $im-pa-iv-base-value : $im-base-value;
-
-/**
-* base width for item list area. (16 * 16 = 256px)
-*/
-$im-pa-iv-base-width : $im-pa-iv-base-value * 16;

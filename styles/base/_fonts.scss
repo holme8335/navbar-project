@@ -1,8 +1,9 @@
 /**
 * Description: Color palette for entire application.
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 
@@ -29,14 +30,16 @@ $im-font-family : (                                      /* map to hold font fam
 $im-base-value      :       1rem;                       /* base value for the application (1rem = 16px). */
 $im-line-height     :       $im-base-value * 1.5;       /* line height for the application. */
 
-$im-font-size : (                                       /* map to hold font-sizes.(8,9,10,12,13,16,18,20,24px) */
+$im-font-size : (                                       /* map to hold font-sizes.(8,9,10,12,13,14,15,16,18,20,24px) */
     'xsmall'        :       $im-base-value * 0.5,
     'smallest'      :       $im-base-value * 0.5625,
     'smaller'       :       $im-base-value * 0.625,
     'small'         :       $im-base-value * 0.75,
     'medium'        :       $im-base-value * 0.825,
-    'normal'        :       $im-base-value,
-    'large'         :       $im-base-value * 1.125,
+    'normal'        :       $im-base-value * 0.875,
+    'large'         :       $im-base-value * 0.9375,
+    'larger'        :       $im-base-value,
+    'largest'       :       $im-base-value * 1.125,
     'xlarge'        :       $im-base-value * 1.25,
     'xxlarge'       :       $im-base-value * 1.5
 );

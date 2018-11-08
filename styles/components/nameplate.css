@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.cat-img {
+  height: 25px;
+  width: 25px;
+  background: url("https://staging4.clariti.app/wp-content/uploads/2018/09/github.png");
+  background-size: 25px 25px;
+}
+
+.arrow-img {
+  -webkit-transition: .6s;
+  transition: .6s;
+  height: 10px;
+  width: 10px;
+  background-image: url("https://staging4.clariti.app/wp-content/uploads/2017/09/android-arrow-back-white-up.png");
+  background-size: 10px 10px;
+}
+
+.big-arrow-img {
+  -webkit-transition: .6s;
+  transition: .6s;
+  height: 20px;
+  width: 20px;
+  background-image: url("https://staging4.clariti.app/wp-content/uploads/2017/09/android-arrow-back-white-up.png");
+  background-size: 20px 20px;
+}
+
+/********* Common Classes ***********/
+body {
+  font: Raleway;
+}
+
+.over-menu-div {
+  width: 353px;
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.container-div {
+  font: 12px Raleway;
+  display: table;
+  vertical-align: middle;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-color: #2b3c4c;
+  width: 100%;
+  min-height: 20px;
+  max-height: 80px;
+  color: #cad1d7;
+  border: 1px solid #556573;
+}
+
+.container-div:hover {
+  -webkit-transition: .1s;
+  transition: .1s;
+  background-color: #dedede;
+  color: #fff;
+}
+
+.icon-div {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 1.5%;
+  margin-left: 2%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.txt-div {
+  vertical-align: center;
+  padding-top: .5%;
+  display: inline-block;
+  min-height: 15px;
+  max-height: 30px;
+}
+
+.js-rotated-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.js-rotated-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.js-rotated-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.right {
+  margin-top: 2.5%;
+  margin-right: 6%;
+  float: right;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.input-div {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.5%;
+}
+
+.sub-menu {
+  padding-left: 12%;
+}
+
+.txt-input-style {
+  background-color: #2b3c4c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+  width: 95%;
+  text-align: center;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/********* First Panel Classes ***********/
+.email-status {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  text-align: left;
+}
+
+.active-email:after {
+  content: "Active";
+  color: #36dc86;
+}
+
+.public-email:after {
+  content: "Public";
+  color: #36dc86;
+}
+
+.container-div:hover .rotated-180 {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.container-div:hover .active-email:after {
+  content: "Inactive";
+  color: red;
+}
+
+.container-div:hover .public-email:after {
+  content: "Not Public";
+  color: red;
+}
+
+/********* Second Panel ***********/
+.sync-txt:after {
+  content: "This Git Cat is currently synched";
+}
+
+.out-sync-txt:after {
+  content: "This Git Cat is not synched";
+}
+
+/********* Third Panel ***********/
+.form-div {
+  padding-right: .1%;
+}
+
+.form-div:hover {
+  background-color: #2b3c4c;
+}
+
+.input-txt {
+  width: 100%;
+  text-align: left;
+  height: 35%;
+  margin-left: 3%;
+  margin-top: 2%;
+  color: #fff;
+}
+
+/********* Fourth Panel ***********/
+.hov-display {
+  display: none;
+}
+
+.container-div:hover .hov-display {
+  display: block;
+}
+
+/********* Fifth Panel ***********/
+.form-div {
+  font: 12px Raleway;
+  width: 100%;
+}
+
+.email-form {
+  display: inline-block;
+  width: 90%;
+}
+
+.form-padding {
+  text-align: center;
+  padding: 3%;
+}
+
+.input-name {
+  display: inline-block;
+  width: 25%;
+}
+
+.form-hov:hover {
+  background-color: #2b3c4c;
+}
+
+.form-bttn {
+  border-radius: 5px;
+}
+
+.form-field {
+  width: 60%;
+  vertical-align: bottom;
+}
+/********* Header Classes ***********/
+.header-div {
+  background-color: #2b3c4c;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  vertical-align: baseline;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.header-item-span {
+  vertical-align: middle;
+  padding-left: 15px;
+  padding-bottom: .2%;
+  margin-right: 1%;
+}
+
+.menu-div {
+  position: absolute;
+  z-index: 1;
+}
+
+.header-menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.header-menu-item:hover .header-item-span {
+  border-bottom: 1.5px solid #30b4f4;
+  cursor: pointer;
+}
+
+.profile-div {
+  font: 21px/1.1 Raleway;
+  line-height: 27.5px;
+  width: 250px;
+  text-align: center;
+  margin-top: 9px;
+  display: inline-block;
+}
+
+.profile-menu-div {
+  margin-left: 7.5%;
+  margin-top: 1%;
+  width: 283px;
+  text-align: left;
+}
+
+.profile-txt-div {
+  padding: 2%;
+  padding-left: 3%;
+}
+
+.header-item-div {
+  font: 12px Raleway;
+  display: inline;
+}
+
+.header-arrow-space {
+  margin: .1%;
+}
+
+.img-offset {
+  margin-left: 15%;
+}
+
+.email-menu-div {
+  left: 0%;
+  margin-top: 2%;
+}
+
+.email-div {
+  width: 350px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.profile-form {
+  width: 100%;
+  float: left;
+}
+
+.business-card-space {
+  margin-right: 4%;
+}
+/*# sourceMappingURL=nameplate.css.map */

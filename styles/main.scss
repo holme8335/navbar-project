@@ -1,8 +1,9 @@
 /**
 * Description: This is the Clariti main styling file
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 
@@ -20,14 +21,14 @@
 @import
 	"base/colors",
 	"base/fonts",
-	"base/breakpoints",
-	"base/image";         // break points for responsive web design //
+	"base/breakpoints";         // break points for responsive web design //
 
 /**
 * The abstracts folder gathers all Sass tools and helpers used across the project.
-* It should not output a single line of CSS when compiled on its own. 
+* It should not output a single line of CSS when compiled on its own.
 */
 @import
+	"abstracts/mixins",
 	"abstracts/variables",
 	"abstracts/functions",
 	"abstracts/placeholders";   // scss placeholders for the app //
@@ -39,7 +40,4 @@
 @import
 	"layout/zone",
 	"layout/area",
-	"layout/common",
-	"layout/forms",
-	"layout/header";            // layout common classes for area and zone //
-
+	"layout/common";            // layout common classes for area and zone //
