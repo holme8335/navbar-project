@@ -1,6 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$default-font: Raleway;
+
 $cat-img-size: 25px;
 $arrow-img-size: 10px;
 $big-arrow-img-size: 20px;
+$valid-txt-color: #36dc86;
+$error-txt-color: red;
+$menu-bckgnd-color:#2b3c4c;
+$menu-txt-color: #cad1d7;
+$menu-border-color: #556573;
+$menu-bckgnd-hov-color: #dedede;
+$menu-txt-hov-color: #fff;
+$menu-input-color: #fff;
+
+$header-txt-color: #fff;
+$clariti-light-blue: #30b4f4;
 
 
 .cat-img {
@@ -25,25 +42,10 @@ $big-arrow-img-size: 20px;
 
 
 
-    $valid-txt-color: #36dc86;
-$error-txt-color: red;
-$menu-bckgnd-color:#2b3c4c;
-$menu-txt-color: #cad1d7;
-$menu-border-color: #556573;
-$menu-bckgnd-hov-color: #dedede;
-$menu-txt-hov-color: #fff;
-$menu-input-color: #fff;
-
-$header-txt-color: #fff;
-$clariti-light-blue: #30b4f4;
-
 
 
 
 /********* Common Classes ***********/
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-$default-font: Raleway;
 
 
 body {

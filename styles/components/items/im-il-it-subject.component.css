@@ -7,9 +7,10 @@
 */
 /**
 * Description: Color palette for entire application.
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 /**
@@ -24,9 +25,10 @@
 /* line height for the application. */
 /**
 * Description: Color palette for entire application.
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 /**
@@ -34,9 +36,10 @@
 */
 /**
 * Description: This file holds the scss functions.
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 /**
@@ -68,12 +71,14 @@
 */
 /**
 * Description: This file holds the scss placeholders.
-* Author: PK
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 /**
+* place holder to set font size and line height
 */
 .im-il-it-subjectStyle {
   line-height: 1.125rem;
@@ -82,6 +87,9 @@
   /* Sets 14px font-size of the element  */
 }
 
+/**
+* place holder to set font color and letter spacing
+*/
 .im-il-it-subjectStyle {
   color: #4d4d4d;
   /* Sets black color of text in the element  */
@@ -90,10 +98,11 @@
 }
 
 /**
-* Description: This file holds the scss variables. 
-* Author: PK
+* Description: This file holds the scss variables.
+* Author: PKI
 * Revision History:
-* 30-OCT-2018 PK Created
+* 30-OCT-2018 PKI Created
+* 08-Nov-2018 PKI Modified
 * Copyright 2018 CCE Technologies Inc
 */
 /**
@@ -107,9 +116,6 @@
 */
 /**
 * base value for item list area. (16px)
-*/
-/**
-* base width for item list area. (16 * 16 = 256px)
 */
 /**
 * Description: Style class to:
