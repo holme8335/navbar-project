@@ -1,0 +1,20 @@
+  svg {
+    width: 48px;
+    height: 48px;
+  }
+
+.svg-wrap{
+  display: inline;
+}
+.svg-container{
+  width:300px;height: 50px;display: inline-block;
+  background-color:sandybrown;
+  border-radius: 5px;padding: 10px;margin: 5px;
+}
+.svgText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 240px;
+}
