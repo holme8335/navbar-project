@@ -44,8 +44,16 @@
 
 
 /**
-* The components folder contains everything component
+* The components folder contains every component
 * that appears in the application.
 */
 @import
 	"components/nameplate";            // nameplate common classes for area and zone //
+
+
+/**
+* The components folder contains every component
+* that appears in the application.
+*/
+@import
+	"svg/svg.components";            // nameplate common classes for area and zone //
