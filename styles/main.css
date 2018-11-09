@@ -299,7 +299,7 @@ Description: Style class to:
     - sets font family to asap.
 */
 /**
-* The components folder contains everything component
+* The components folder contains every component
 * that appears in the application.
 */
 .cat-img {
@@ -325,6 +325,39 @@ Description: Style class to:
   width: 20px;
   background-image: url("https://staging4.clariti.app/wp-content/uploads/2017/09/android-arrow-back-white-up.png");
   background-size: 20px 20px;
+}
+
+svg {
+  width: 48px;
+  height: 48px;
+}
+
+.svg-wrap {
+  display: inline;
+}
+
+.svg-container {
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  background-color: sandybrown;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.svgText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 240px;
+}
+
+.im-np-storageOneDrive ::ng-deep svg {
+  width: 50px;
+  height: 50px;
+  fill: green;
 }
 
 /********* Common Classes ***********/
