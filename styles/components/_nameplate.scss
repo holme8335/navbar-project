@@ -169,11 +169,11 @@ input:focus {
 
 .active-email:after {
   content: "Active";
-  color: $valid-txt-color; }
+  color: $im-colors success; }
 
 .public-email:after {
   content: "Public";
-  color: $valid-txt-color; }
+  color: $im-colors success; }
 
 .container-div:hover .rotated-180 {
   transform: rotate(0);
@@ -181,11 +181,11 @@ input:focus {
 
 .container-div:hover .active-email:after {
   content: "Inactive";
-  color: $error-txt-color; }
+  color: $im-colors warning; }
 
 .container-div:hover .public-email:after {
   content: "Not Public";
-  color: $error-txt-color; }
+  color: $im-colors warning; }
 
 /********* Second Panel ***********/
 .sync-txt:after {
@@ -279,6 +279,10 @@ input:focus {
 .header-menu-item:hover  .header-item-span{
     border-bottom: 1.5px solid $clariti-light-blue;
     cursor: pointer; 
+}
+
+.selector-border {
+  border-bottom: 2px solid $clariti-light-blue;
 }
 
 .profile-div {
