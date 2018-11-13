@@ -95,7 +95,7 @@ body {
   transition: .2s;
   background-color: $menu-bckgnd-color;
   width: 100%;
-  min-height: 20px;
+  min-height: 24px;
   max-height: 80px;
   color: $menu-txt-color;
   border: 1px solid $menu-border-color; }
@@ -104,6 +104,10 @@ body {
   transition: .1s;
   background-color: $menu-bckgnd-hov-color;
   color: $menu-txt-hov-color; }
+
+.type-two-img-padding {
+  padding-left: 3%;
+  }
 
 .icon-div {
   vertical-align: middle;
@@ -114,7 +118,7 @@ body {
   background-position: right top; }
 
 .txt-div {
-  vertical-align: center;
+  vertical-align: middle;
   padding-top: .5%;
   display: inline-block;
   min-height: 15px;
@@ -169,11 +173,11 @@ input:focus {
 
 .active-email:after {
   content: "Active";
-  color: $im-colors success; }
+  color: $valid-txt-color; }
 
 .public-email:after {
   content: "Public";
-  color: $im-colors success; }
+  color: $valid-txt-color; }
 
 .container-div:hover .rotated-180 {
   transform: rotate(0);
@@ -181,11 +185,11 @@ input:focus {
 
 .container-div:hover .active-email:after {
   content: "Inactive";
-  color: $im-colors warning; }
+  color: $error-txt-color; }
 
 .container-div:hover .public-email:after {
   content: "Not Public";
-  color: $im-colors warning; }
+  color: $error-txt-color; }
 
 /********* Second Panel ***********/
 .sync-txt:after {

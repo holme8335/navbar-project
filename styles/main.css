@@ -383,7 +383,7 @@ body {
   transition: .2s;
   background-color: #2b3c4c;
   width: 100%;
-  min-height: 20px;
+  min-height: 24px;
   max-height: 80px;
   color: #cad1d7;
   border: 1px solid #556573;
@@ -396,6 +396,10 @@ body {
   color: #fff;
 }
 
+.type-two-img-padding {
+  padding-left: 3%;
+}
+
 .icon-div {
   vertical-align: middle;
   display: inline-block;
@@ -406,7 +410,7 @@ body {
 }
 
 .txt-div {
-  vertical-align: center;
+  vertical-align: middle;
   padding-top: .5%;
   display: inline-block;
   min-height: 15px;
@@ -604,6 +608,10 @@ input:focus {
 .header-menu-item:hover .header-item-span {
   border-bottom: 1.5px solid #30b4f4;
   cursor: pointer;
+}
+
+.selector-border {
+  border-bottom: 2px solid #30b4f4;
 }
 
 .profile-div {

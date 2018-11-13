@@ -20,6 +20,19 @@ document.getElementById('header-email-div').onclick = function() {
         };
 };
 
+document.getElementById('header-feeds-div').onclick = function() {
+    var arrow = document.getElementById('feeds-arrow');
+    var showDiv = document.getElementById('feeds-container');
+    var border = document.getElementById('header-feeds-span');
+        arrow.classList.toggle("js-rotated-180");
+        showDiv.classList.toggle("hide");
+        if (border.classList.contains("selector-border") == false) {
+            border.classList.add("selector-border");
+        } else {
+            border.classList.remove("selector-border");
+        };
+};
+
 document.getElementById('sub-menu').onclick = function() {
     var div = document.getElementById('menu-arrow');
         div.classList.toggle("js-rotated-90");
