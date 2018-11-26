@@ -327,9 +327,9 @@ Description: Style class to:
   background-size: 20px 20px;
 }
 
-svg {
-  width: 48px;
-  height: 48px;
+.business-card {
+  width: 20px;
+  height: 20px;
 }
 
 .svg-wrap {
