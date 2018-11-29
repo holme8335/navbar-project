@@ -1,11 +1,4 @@
-/**
-* Description: Color palette for entire application.
-* Author: PKI
-* Revision History:
-* 30-OCT-2018 PKI Created
-* 08-Nov-2018 PKI Modified
-* Copyright 2018 CCE Technologies Inc
-*/
+
 
 /**
 * No other color should be declared anywhere in the application.
@@ -13,9 +6,18 @@
 $im-colors: (                                 /* map to hold base color.*/
   "primary"     : rgb(136,0,255),
   "accent"      : rgb(0,172,255),
-  "secondary"   : rgb(255,140,0),
-  "foreground"  : rgb(128,128,128),
+  "foreground"  : rgb(255,140,0),
+  "secondary"   : rgb(128,128,128),
   "background"  : rgb(0,255,255),
   "warning"     : rgb(255,69,0),
-  "success"     : rgb(0,255,0)
+  "success"     : rgb(0,255,0),
+  "whiteColor"       : rgb(255,255,255),
+  "navbar"		: rgb(30, 41, 54),
+  "navbar-back" : rgb(43, 57, 70),
+  "blackColor"     : rgb(0,0,0),
+  "lightblue" : rgb(68, 173, 227),
+  "accent1" : rgb(37, 37,41),
+  "accent2" : rgba(233, 236, 239, 0.30),
+  "accent3": rgb(68, 173, 227),
+  "redColor": rgb(255, 0, 0),
 );

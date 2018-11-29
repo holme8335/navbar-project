@@ -1,0 +1,51 @@
+@import '../abstracts/mixins';
+
+.dropdown-menu {
+    @include position(absolute);
+    @include top(100%);
+    @include zIndex(1000);
+    @include display(none);
+    @include float(left);
+    @include minWidth(10rem);
+    @include paddingMargin(.5rem 0, .125rem 0 0);
+    @include fontsizeColor(medium, accent1);
+    @include textAlign(left);
+    @include listStyle(none);
+    @include backgroundColor(setColor(navbar-back));
+    @include backgroundClip(padding-box);
+    @include border(1px solid black, 0.25rem);
+
+    &.left {
+        @include left(0);
+    }
+    &.right {
+        @include right(0);
+    }
+
+    .dropdown-item {
+        @include display(block);
+        @include paddingMargin(.1rem .5rem, none);
+        @include clear(both);
+        @include fontWeight(400);
+        @include textColor(whiteColor);
+        @include textAlign(inherit);
+        @include whiteSpace(nowrap);
+        @include backgroundColor(transparent);
+        @include border(0, none);
+
+        @include flexview();
+        @include flexDirection(row);
+        @include alignItems(center);
+
+        .item-image-container {
+            @include widthHeight(20px, 20px);
+            @include marginright(0.9rem);
+        }
+    }
+    .dropdown-divider {
+        @include widthHeight(auto, 0);
+        @include paddingMargin(none, .1rem 0);
+        @include overflow(hidden);
+        @include borderTop(1px solid setColor(accent2));
+    }
+}

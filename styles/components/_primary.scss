@@ -1,0 +1,52 @@
+@import '../abstracts/mixins';
+
+.mr-auto {
+    @include marginrightimportant('auto');
+}
+.text-white {
+    @include textColor('white');
+}
+.text-success {
+    @include textColor('success');
+}
+.text-wrap {
+    @include wordWrap(break-word);
+}
+.mr-1 {
+    @include marginright('.25rem');
+}
+.mr-2 {
+    @include marginright('.5rem');
+}
+.mr-3 {
+    @include marginright('1rem');
+}
+.mr-4 {
+    @include marginright('1.5rem');
+}
+.mr-5 {
+    @include marginright('3rem');
+}
+.ml-5 {
+    @include marginleftimportant('3rem');
+}
+.ml-3 {
+    @include marginleftimportant('1rem');
+}
+.transparent {
+    @include backgroundColor(transparent);
+}
+.w-100 {
+    @include widthHeight(100%, none);
+}
+.justify-content-around {
+    @include flexview();
+    @include justifyContent(space-around);
+}
+.text-center {
+    @include textAlign(center);
+}
+
+.svg-icon path {
+    @include fill(setColor(redColor));
+}

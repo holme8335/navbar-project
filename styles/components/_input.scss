@@ -1,0 +1,23 @@
+
+@import '../abstracts/mixins';
+
+.textinput {
+    @include backgroundColor(black);
+    @include border(none, none);
+    @include paddingMargin(.5rem, none);
+    @include textColor(whiteColor);
+
+    &::placeholder {
+        @include textColor(accent);
+        @include opacity(1);
+    }
+
+    &.border-less {
+        @include backgroundColor(transparent);
+        @include border(none, none);
+        @include borderBottom(2px solid white);
+    }
+    &.placeholder-grey::placeholder {
+        @include textColor(secondary);
+    }
+}

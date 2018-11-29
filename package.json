@@ -1,0 +1,23 @@
+{
+  "name": "nameplate-project",
+  "version": "1.0.0",
+  "description": "nameplate",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirzoyan/nameplate-project-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimirzoyan/nameplate-project-master/issues"
+  },
+  "homepage": "https://github.com/vladimirzoyan/nameplate-project-master#readme"
+}

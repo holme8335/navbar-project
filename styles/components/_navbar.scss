@@ -1,0 +1,49 @@
+@import '../abstracts/mixins';
+
+nav.navbar {
+    @include gridview();
+    @include position(relative);
+    @include paddingMargin(.5rem 1rem, none);
+    @include color(setColor(secondary, darker));
+    @include backgroundColor(setColor(navbar));
+
+    .navbar-collapse {
+        @include gridview();
+        @include widthHeight(100%, auto);
+        @include gridTemplateColumn(auto auto);
+        @include justifyContent(space-between);
+
+        .navbar-nav {
+            @include flexview();
+            @include paddingLeft(0);
+            @include marginBottom(0);
+            @include listStyle(none);
+
+            .nav-item {
+                .nav-link {
+                    @include display(block);
+                    @include paddingMargin(.5rem 1rem, none);
+                    @include textColor(whiteColor);
+
+                }
+                .link {
+                    @include textDecoration(none);
+                    @include backgroundColor(transparent);
+                    @include textDecorationSkip(objects);
+                }
+                &.dropdown {
+                    @include position(relative);
+                    @include borderBottom(3px solid transparent);
+                }
+
+                &.dropdown:hover {
+                    @include borderBottom(3px solid setColor(accent3));
+                    .dropdown-menu {
+                        @include display(block);
+                    }
+                }
+            }
+
+        }
+    }
+}

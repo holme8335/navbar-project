@@ -1,11 +1,4 @@
-/**
-* Description: Color palette for entire application.
-* Author: PKI
-* Revision History:
-* 30-OCT-2018 PKI Created
-* 08-Nov-2018 PKI Modified
-* Copyright 2018 CCE Technologies Inc
-*/
+
 
 /**
 * This is the im Font styling file
@@ -16,7 +9,7 @@
 
 /*Google Fonts imported from googleapi. */
 @import 
-    url('https://fonts.googleapis.com/css?family=Asap|Open+Sans|Raleway|Roboto:300,400,500');
+    url('https://fonts.googleapis.com/css?family=Raleway|Asap|Open+Sans|Roboto:300,400,500');
 
 $im-font-family : (                                      /* map to hold font families. */
     'opensans'      :		OpenSans,

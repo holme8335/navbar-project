@@ -1,11 +1,4 @@
-/**
-* Description: This is the Clariti main styling file
-* Author: PKI
-* Revision History:
-* 30-OCT-2018 PKI Created
-* 08-Nov-2018 PKI Modified
-* Copyright 2018 CCE Technologies Inc
-*/
+
 
 /**
 * Rules : one @import per folder.
@@ -42,12 +35,8 @@
 	"layout/area",
 	"layout/common";            // layout common classes for area and zone //
 
-
 /**
-* The components folder contains every component
-* that appears in the application.
+* The component folder contains all components used in the application
 */
 @import
-	"components/nameplate";            // nameplate common classes for area and zone //
-
-
+	"components/components";

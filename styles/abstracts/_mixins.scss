@@ -1,7 +1,210 @@
-/**
-* Description: This file holds the scss mixins. 
-* Author: PKI
-* Revision History:
-* 30-OCT-2018 PKI Created
-* Copyright 2018 CCE Technologies Inc
-*/
+@mixin flexview() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin gridview() {
+    display: -webkit-grid;
+    display: -ms-grid;
+    display: grid;
+}
+
+@mixin gridTemplateColumn($setting){
+    grid-template-columns: $setting;
+}
+
+@mixin justifyContent($justify) {
+    justify-content: $justify;    
+}
+
+@mixin marginleft($size){
+    margin-left: $size;
+}
+
+@mixin marginright($size){
+    margin-right: $size;
+}
+
+@mixin marginrightimportant($size){
+    margin-right: $size !important;
+}
+
+@mixin marginleftimportant($size){
+    margin-left: $size !important;
+}
+
+@mixin textColor($color){
+    color: setColor($color);
+}
+
+@mixin textDecoration($text) {
+    text-decoration: $text;
+}
+
+@mixin textDecorationSkip($text) {
+    -webkit-text-decoration-skip: $text;
+}
+
+@mixin color($color){
+    color: $color;
+}
+
+@mixin fontSize($size){
+    font-size: $size;
+}
+
+@mixin fontsizeColor($size, $color){
+    font-size: setFontSize($size);
+    color: setColor($color);
+}
+
+@mixin fontweight($weight){
+    font-weight: $weight;
+}
+
+@mixin paddingMargin($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin paddingLeft($padding){
+    padding-left: $padding;
+}
+
+@mixin paddingRight($padding){
+    padding-right: $padding;
+}
+
+@mixin paddingTop($padding){
+    padding-top: $padding;
+}
+
+@mixin paddingBottom($padding){
+    padding-bottom: $padding;
+}
+
+@mixin marginTop($margin){
+    margin-top: $margin;
+}
+
+@mixin marginBottom($margin){
+    margin-bottom: $margin;
+}
+
+@mixin border($border, $radius) {
+    border: $border;
+    border-radius: $radius;
+}
+
+@mixin borderTop($border) {
+    border-top: $border;
+}
+
+@mixin borderBottom($border) {
+    border-bottom: $border;
+}
+
+@mixin  position($position) {
+    position: $position;
+}
+
+@mixin top($top){
+    top: $top;
+}
+@mixin left($left){
+    left: $left;
+}
+@mixin right($right){
+    right: $right;
+}
+@mixin bottom($bottom){
+    bottom: $bottom;
+}
+@mixin zIndex($zIndex){
+    z-index: $zIndex;
+}
+@mixin display($display){
+    display: $display;
+}
+@mixin float($float){
+    float: $float;
+}
+@mixin widthHeight($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin minWidth($minWidth){
+    min-width: $minWidth;
+}
+@mixin textAlign($align){
+    text-align: $align;
+}
+@mixin listStyle($liststyle){
+    list-style: $liststyle;
+}
+@mixin backgroundColor($background){
+    background-color: $background;
+}
+
+@mixin backgroundClip($backgroundClip){
+    background-clip: $backgroundClip;
+}
+
+@mixin clear($clear){
+    clear: $clear;
+}
+@mixin fontFamily($family){
+    font-family: $family;
+}
+@mixin fontWeight($weight){
+    font-weight: $weight;
+}
+@mixin overflow($overflow){
+    overflow: $overflow;
+}
+@mixin whiteSpace($whitespace){
+    white-space: $whitespace;
+}
+
+@mixin flexDirection($direction){
+    flex-direction: $direction;
+}
+@mixin alignItems($align){
+    align-items: $align;
+}
+@mixin opacity($opacity){
+    opacity: $opacity;
+}
+
+@mixin boxSizing($box){
+    box-sizing: $box;
+}
+
+@mixin touchCallout($callout) {
+    -webkit-touch-callout: $callout;
+}
+
+@mixin userSelect($select) {
+    -webkit-user-select: $select;   /* Chrome/Safari/Opera */
+    -khtml-user-select: $select;    /* Konqueror */
+    -moz-user-select: $select;      /* Firefox */
+    -ms-user-select: $select;       /* Internet Explorer/Edge */
+    user-select: $select;      
+}
+
+@mixin wordWrap($wordwrap) {
+    word-wrap: $wordwrap;
+}
+
+@mixin fill($color){
+    fill: $color;
+}
+
+@mixin flexGrow($grow){
+    flex-grow: $grow;
+}
+
+@mixin textOverflow($overflow){
+    text-overflow: $overflow;
+}
