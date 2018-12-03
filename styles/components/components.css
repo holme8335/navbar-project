@@ -1,0 +1,253 @@
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.text-white {
+  color: setColor("white");
+}
+
+.text-success {
+  color: setColor("success");
+}
+
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1.5rem;
+}
+
+.mr-5 {
+  margin-right: 3rem;
+}
+
+.ml-5 {
+  margin-left: 3rem !important;
+}
+
+.ml-3 {
+  margin-left: 1rem !important;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.w-100 {
+  width: 100%;
+  height: none;
+}
+
+.justify-content-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.svg-icon path {
+  fill: setColor(redColor);
+}
+
+nav.navbar {
+  display: -webkit-grid;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  padding: 0 0.5rem 0.2rem 1rem;
+  margin: none;
+  color: setColor(secondary, darker);
+  background-color: setColor(navbar);
+}
+
+nav.navbar .navbar-collapse {
+  display: -webkit-grid;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav.navbar .navbar-collapse .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0.7rem;
+  list-style: none;
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  display: block;
+  padding: 0rem 1rem;
+  margin: none;
+  color: setColor(whiteColor);
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-name {
+  font-size: 1.25rem;
+  padding: none;
+  margin: -0.25rem 0 0 0;
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-item .link {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-item.dropdown {
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-item.dropdown:hover {
+  border-bottom: 3px solid setColor(accent3);
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: setFontSize(medium);
+  color: setColor(accent1);
+  text-align: left;
+  list-style: none;
+  background-color: setColor(navbar-back);
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu.left {
+  left: 0;
+}
+
+.dropdown-menu.right {
+  right: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  display: block;
+  padding: 0.1rem 0.5rem;
+  margin: none;
+  clear: both;
+  font-weight: 400;
+  color: setColor(whiteColor);
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-menu .dropdown-item .item-image-container {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.9rem;
+}
+
+.dropdown-menu .dropdown-divider {
+  width: auto;
+  height: 0;
+  padding: none;
+  margin: 0.1rem 0;
+  overflow: hidden;
+  border-top: 1px solid setColor(accent2);
+}
+
+.textinput {
+  background-color: black;
+  border: none;
+  border-radius: none;
+  padding: 0.5rem;
+  margin: none;
+  color: setColor(whiteColor);
+}
+
+.textinput::-webkit-input-placeholder {
+  color: setColor(accent);
+  opacity: 1;
+}
+
+.textinput:-ms-input-placeholder {
+  color: setColor(accent);
+  opacity: 1;
+}
+
+.textinput::-ms-input-placeholder {
+  color: setColor(accent);
+  opacity: 1;
+}
+
+.textinput::placeholder {
+  color: setColor(accent);
+  opacity: 1;
+}
+
+.textinput.border-less {
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+  border-bottom: 2px solid white;
+}
+
+.textinput.placeholder-grey::-webkit-input-placeholder {
+  color: setColor(secondary);
+}
+
+.textinput.placeholder-grey:-ms-input-placeholder {
+  color: setColor(secondary);
+}
+
+.textinput.placeholder-grey::-ms-input-placeholder {
+  color: setColor(secondary);
+}
+
+.textinput.placeholder-grey::placeholder {
+  color: setColor(secondary);
+}
+/*# sourceMappingURL=components.css.map */

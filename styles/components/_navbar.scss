@@ -3,7 +3,7 @@
 nav.navbar {
     @include gridview();
     @include position(relative);
-    @include paddingMargin(.5rem 1rem, none);
+    @include paddingMargin(0 .5rem .2rem 1rem, none);
     @include color(setColor(secondary, darker));
     @include backgroundColor(setColor(navbar));
 
@@ -17,14 +17,18 @@ nav.navbar {
             @include flexview();
             @include paddingLeft(0);
             @include marginBottom(0);
+            @include marginTop(.7rem);
             @include listStyle(none);
 
             .nav-item {
                 .nav-link {
                     @include display(block);
-                    @include paddingMargin(.5rem 1rem, none);
+                    @include paddingMargin(0rem 1rem, none);
                     @include textColor(whiteColor);
-
+                }
+                .nav-name {
+                    @include fontSize(1.25rem);
+                    @include paddingMargin(none, -.25rem 0 0 0);
                 }
                 .link {
                     @include textDecoration(none);

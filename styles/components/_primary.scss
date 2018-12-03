@@ -1,7 +1,7 @@
 @import '../abstracts/mixins';
 
 .mr-auto {
-    @include marginrightimportant('auto');
+    @include marginrightimportant(auto);
 }
 .text-white {
     @include textColor('white');
@@ -13,25 +13,25 @@
     @include wordWrap(break-word);
 }
 .mr-1 {
-    @include marginright('.25rem');
+    @include marginright(.25rem);
 }
 .mr-2 {
-    @include marginright('.5rem');
+    @include marginright(.5rem);
 }
 .mr-3 {
-    @include marginright('1rem');
+    @include marginright(1rem);
 }
 .mr-4 {
-    @include marginright('1.5rem');
+    @include marginright(1.5rem);
 }
 .mr-5 {
-    @include marginright('3rem');
+    @include marginright(3rem);
 }
 .ml-5 {
-    @include marginleftimportant('3rem');
+    @include marginleftimportant(3rem);
 }
 .ml-3 {
-    @include marginleftimportant('1rem');
+    @include marginleftimportant(1rem);
 }
 .transparent {
     @include backgroundColor(transparent);
